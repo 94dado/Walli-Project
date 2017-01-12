@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/profile_header">
+
+    <!--nome-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/name_placeholder"
+            android:id="@+id/profile_name_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:id="@+id/profile_name_edit"
+            android:text=""
+            android:maxLength="100"
+            android:lines="1"
+            android:hint="@string/name_placeholder"
+            android:ems="10" />
+    </LinearLayout>
+
+    <!--cognome-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/surname_placeholder"
+            android:id="@+id/profile_surname_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/profile_surname_edit"
+            android:text=""
+            android:maxLength="100"
+            android:lines="1"
+            android:hint="@string/surname_placeholder"
+            android:ems="10" />
+    </LinearLayout>
+
+    <!--cell number-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/phone_placeholder"
+            android:id="@+id/profile_phone_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:lines="1"
+            android:text=""
+            android:maxLength="13"
+            android:hint="@string/phone_placeholder"
+            android:id="@+id/profile_phone_edit" />
+    </LinearLayout>
+
+    <!--email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/email_placeholder"
+            android:id="@+id/profile_email_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:ems="10"
+            android:maxLength="100"
+            android:text=""
+            android:hint="@string/email_placeholder"
+            android:id="@+id/profile_email_edit" />
+    </LinearLayout>
+
+    <!--password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/pass_placeholder"
+            android:id="@+id/profile_pass_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:lines="1"
+            android:text=""
+            android:hint="@string/pass_placeholder"
+            android:id="@+id/profile_pass_edit"/>
+    </LinearLayout>
+
+    <!--conferma password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+        <com.walli_app.walli.RobotoTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"
+            android:text="@string/confirm_pass_placeholder"
+            android:id="@+id/profile_pass_confirm_label" />
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:ems="10"
+            android:text=""
+            android:hint="@string/pass_placeholder"
+            android:id="@+id/profile_pass_confirm_edit"/>
+    </LinearLayout>
+</LinearLayout>

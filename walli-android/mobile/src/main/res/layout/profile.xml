@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--header-->
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/profile_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+                <!--immagine profilo -->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/default_user_image"/>
+
+                <!--nickname-->
+                <com.walli_app.walli.RobotoBoldTextView
+                    android:id="@+id/profile_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/profile_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="23sp"
+                    android:text="Pino il pinguino"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </RelativeLayout>
+            <!--form-->
+            <include layout="@layout/form"
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_header"/>
+            <!--avviso su come gestiamo la pwd -->
+            <com.walli_app.walli.RobotoItalicTextView
+                android:id="@+id/pwd_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/form"
+                android:layout_marginTop="10dp"
+                android:text="@string/leave_password"/>
+            <!--lascio spazio bianco -->
+            <include layout="@layout/blank_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pwd_description"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

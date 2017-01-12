@@ -1,0 +1,232 @@
+﻿/login
+	parameters:
+		user: username dell'account
+		pwd: password gia' passata una volta con MD5
+		token: token di firebase, facoltativo
+	answer: json con id e chiave sessione se tutto ok, altrimenti risposta vuota
+
+/logout
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		token: token di firebase, facoltativo
+	answer: un 200 con {response:"ok"}.
+
+/signUp
+	parameters:
+		nick: nickname scelto
+		mail: mail scelta
+		surname: cognome
+		name: nome
+		cell: numero di cellulare
+		pwd: password come sempre gia' in MD5
+	answer: 200 con {response:"ok"} nel caso sia andato tutto bene.
+
+/getGroupsByUser
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+	answer: array dei gruppi (vuoto se non ce n'è o errore)
+
+/getUsersByGroup
+	parameters:
+		g_id: id del gruppo
+		id: id dell'utente
+		key: chiave di controllo sessione
+	answer: array degli utenti del gruppo
+
+/getSpeseByGroup
+	parameters:
+		g_id: id del gruppo
+		id: id dell'utente
+		key: chiave di controllo sessione
+	answer: elenco delle spese di quel gruppo
+
+/insertSpesa
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		g_id: id del gruppo
+		n_id: FACOLTATIVO!!!! Se passato, indica da quale notifica spesa si è generata la spesa (e la cancella dal DB)
+	response: data e s_id in un JSON
+
+/getNotificheByGroup
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		g_id: id del gruppo
+	response: elenco delle notifiche di spese da effettuare nel gruppo
+
+/getCreditDebitByGroup
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		g_id: id del gruppo
+	response: dati utente, credito e debito verso di esso (per ogni utente del gruppo).
+
+/insertNotifica
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		g_id: id del gruppo
+		description: descrizione della spesa da fare
+	response: JSON con n_id della nuova notifica creata
+
+/updateProfileData
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		name
+		surname
+		mail
+		phone
+		pwd :facoltativa! Se non la metti, non la aggiorno. Se la mandi, ovviamente vuole l'MD5
+	respomse: json con response:ok se tutto è andato bene, altrimenti response:error
+
+/restorePassword
+	parameters:
+		mail: la mail di cui ripristinare la pwd
+	answer:responseok, oppure response denied se non conosco la mail
+
+/getHints
+	parameters:
+		id
+		key
+		text: roba digitata per dare i suggerimenti
+	response: array di utenti corrispondenti al text passato
+
+/updateGroup
+	parameters:
+		id
+		key
+		g_id:OPZIONALE. Se me lo passi, aggiornerò il gruppo esistente con questo id. Se non ce l'ho, creo un nuovo gruppo
+		user_ids:array degli id di tutti gli utenti che si trovano al suo interno. Ricordati di NON 
+					mettere l'amministratore del gruppo, ma solo quelli degli altri utenti.
+		g_name:OPZIONALE. Se la passi, aggiorno i dati. Non è opzionale se creo il gruppo
+		valuta:OPZIONALE. Se lo passi, aggiorno i dati 	Non è opzionale se creo il gruppo
+	answer: indipendentemente dai parametri, ti rispondo con JSON contenente g_id del gruppo o creato o aggiornato.
+
+/getSpeseForCharts
+	parameters:
+		id: id dell'utente
+		key: chiave di controllo sessione
+		date1: data iniziale dal quale recuperare le spese
+		date2: data finale dal quale recuperare le spese
+		valuta: valuta preferita dall'utente in cui convertire tutte le cazzo di spese
+	answer: elenco delle spese nella finestra di tempo impostata
+
+/getCreditDebitForCharts
+	parameters:
+		id
+		key
+		valuta: valuta preferita dell'utente
+	answer: json con credito e debito
+
+/getCreditDebit
+	parameters:
+		id
+		key
+		valuta: la valuta preferita dall'utente in cui eseguire tutte le cazzo di conversioni
+	answer: elenco di quanto si deve e quando si deve avare da ogni utente indipendentemente dal gruppo
+
+/getAllMyUsers
+	parameters:
+		id
+		key
+	answer: tutti gli utenti con cui hai a che fare in almeno un gruppo
+
+/deleteShop
+	parameters:
+		id
+		key
+		s_id: id della spesa da cancellare
+	answer: result:val dove val può essere "ok" se tutto è andato liscio, "denied" se non posso perchè alcune quote (o tutte) sono pagate
+
+/deleteGroup
+	parameters:
+		id
+		key
+		g_id: id del gruppo da cui uscire/cancellare
+	answer: result:ok se tutto è andato ok, denied se il gruppo non può essere cancellato/non si può uscire dal gruppo perchè ci sono ancora quote da pagare
+
+/isChangeableShop
+	parameters:
+		id
+		key
+		s_id: id della spesa da controllare
+	aswer: response "ok" se si può, altrimenti response "denied"
+
+/updateNotify
+	parameters:
+		id
+		key
+		n_id: id della notifica
+		desc: FACOLTATIVO. Se c'è aggiorno, se non c'è cancello. Si tratta della descrizione della notifica di spesa
+	answer: response "ok" se è andato tutto ok.
+
+/changeShop
+	parameters:
+		id
+		key
+		s_id
+		desc: descrizione spesa
+		value: valore spesa
+	answer: response "ok" se tutto va bene
+
+/setAsPaid
+	parameters:
+		id
+		key
+		u_id: l'utente che ti ha dato i soldi
+		g_id: FACOLTATIVO! Se c'è, considero pagati solo i debiti del gruppo, altrimenti tutti in generale
+	answer: response "ok"
+
+
+/askForPayment
+	parameters:
+		id
+		key
+		u_id: il tipo che si vuole sia notificato
+	answer: response:sent se inviato, response:denied se si è già inviato la notifica nelle scorse 24 ore
+
+
+*CHIAMATE PER LE IMMAGINI*
+
+/saveImage
+	parameters:
+		id
+		key
+		type: stringa "group" o "user"
+		img_id: id dell'utente o del gruppo di cui si vuole l'immagine
+		img_ext: estensione del file che si manda
+		raw_img: rappresentazione in base64 dell'immagine
+	answer: restituisce response:timestamp
+
+/getImage
+	parameters:
+		id
+		key
+		type
+		img_id
+	answer: restituisce response: rappresentazione in base64 dell'immagine e timestamp. Se non esiste l'immagine, restituisce default
+
+/checkImage
+	parameters:
+		id
+		key
+		type
+		img_id
+		timestamp: il timestamp che si ha in cache
+	answer: response:up-to-date se è aggiornato, to-update in caso contrario
+
+
+NOTIFICHE PUSH
+Perchè la notifica sia sempre gestita dalla nostra app e non dal sistema, tutti i dati sono nel campo data della notifica. In data trovi una stringa rappresentante un json. i campi sono 2:
+	type: contiene che tipo di notifica è. Valori possibili: newGroup, newShop, newNotify, paid, paymentRequest (si lo so l'inglese è palesemente scazzato)
+	message: altro json che contiene dati con cui generare qualcosa da mostrare. I campi variano in base al type.
+
+newGroup 			-> name, id
+newShop 			-> g_id, g_name, desc, value
+newNotify 			-> g_name, g_id, desc
+paid				-> u_name, u_id
+paymentRequest		-> u_id, u_name

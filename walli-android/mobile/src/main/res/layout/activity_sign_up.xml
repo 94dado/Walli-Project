@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignUpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--header-->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ablayout"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ablayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- primo layout -->
+                <RelativeLayout
+                    android:id="@+id/subscribe_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <!--intestazione-->
+                    <com.walli_app.walli.RobotoBoldTextView
+                        android:id="@+id/welcome_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/subscribe"/>
+
+                    <!--immagine profilo -->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image"
+                        android:layout_below="@+id/welcome_text"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/default_user_image"/>
+
+                    <!--descrizione immagine profilo -->
+                    <com.walli_app.walli.RobotoBoldTextView
+                        android:id="@+id/img_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_below="@id/welcome_text"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toEndOf="@id/user_image"
+                        android:text="@string/img_description"
+                        />
+                    <!--nickname-->
+                    <LinearLayout
+                        android:id="@+id/nick_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/user_image">
+                        <com.walli_app.walli.RobotoTextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/nick_placeholder"
+                            android:id="@+id/profile_name_label" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:id="@+id/username"
+                            android:hint="@string/nick_placeholder"
+                            android:maxLength="50"
+                            android:ems="10" />
+                    </LinearLayout>
+
+                    <!--resto del form -->
+                    <include layout="@layout/form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nick_layout" />
+                </RelativeLayout>
+
+                <!--secondo layout -->
+                <RelativeLayout
+                    android:id="@+id/subscribe_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:padding="@dimen/activity_vertical_margin">
+                    <!--immagine utente-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image_confirm"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/default_user_image"
+                        />
+                    <!--nome utente registrato -->
+                    <com.walli_app.walli.RobotoBoldTextView
+                        android:id="@+id/user_name_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_image_confirm"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="%USERNAME%"/>
+
+                    <!--descrizione di come completare iscrizione -->
+                    <com.walli_app.walli.RobotoTextView
+                        android:id="@+id/new_user_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_name_confirm"
+                        android:layout_marginTop="15dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/registration_confirmed_description"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

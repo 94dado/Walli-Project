@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/group_handler"
+    android:background="?attr/selectableItemBackground">
+
+    <!--immagine gruppo-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/logo_description"
+        android:id="@+id/group_image"
+        android:src="@mipmap/default_group_image"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <!--nome gruppo-->
+    <com.walli_app.walli.RobotoTextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/nomeGruppo"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/group_image"
+        android:layout_toEndOf="@+id/group_image"
+        android:text="nome Gruppo"/>
+
+    <!--cashi-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/cashi"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/group_image"
+        android:layout_below="@+id/nomeGruppo"
+        android:layout_toEndOf="@+id/group_image"
+        android:text="0€"/>
+
+    <!--last update-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/lastMod"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Yesterday"/>
+
+    <!--icona notifica-->
+    <ImageView
+        android:contentDescription="@string/notification_description"
+        android:id="@+id/bg_notify"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/circle_background"
+        android:layout_below="@+id/lastMod"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!--testo notifica-->
+    <com.walli_app.walli.RobotoTextView
+        android:id="@+id/n_notify"
+        android:layout_alignStart="@+id/bg_notify"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_alignLeft="@id/bg_notify"
+        android:layout_alignTop="@id/bg_notify"
+        android:layout_alignRight="@id/bg_notify"
+        android:layout_alignBottom="@id/bg_notify"
+        android:layout_alignEnd="@+id/bg_notify"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="12sp"
+        android:text="99"/>
+    <!--linea divisoria-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cashi"/>
+</RelativeLayout>

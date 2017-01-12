@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Walli</string>
+    <string name="logo_description">Logo of the group</string>
+    <string name="line_description">Line</string>
+    <string name="roboto" translatable="false">fonts/Roboto-Regular.otf</string>
+    <string name="roboto_italic" translatable="false">fonts/Roboto-Italic.otf</string>
+    <string name="roboto_bold" translatable="false">fonts/Roboto-Bold.otf</string>
+    <string name="drawer_open">Open Menu</string>
+    <string name="drawer_close">Close Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="notification_description">Notifies number</string>
+    <string name="name_placeholder">Name</string>
+    <string name="surname_placeholder">Surname</string>
+    <string name="phone_placeholder">Phone</string>
+    <string name="email_placeholder" translatable="false">E-mail</string>
+    <string name="pass_placeholder" translatable="false">Password</string>
+    <string name="confirm_pass_placeholder">Confirm Password</string>
+    <string name="menu_groups">Groups</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_charts">Charts</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password" translatable="false">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_incorrect_password">Username or password are not correct</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error">Error!</string>
+    <string name="menu_logout" translatable="false">Logout</string>
+    <string name="error_get_groups">Error while retrieving groups data</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="welcome">Welcome to Walli</string>
+    <string name="create_group">Add New Group</string>
+    <string name="new_group_description">Add the group name and optional group icon</string>
+    <string name="new_group_placeholder">Insert the new group name</string>
+    <string name="title_activity_create_group">Create new group</string>
+    <string name="title_activity_show_group" translatable="false">ShowGroupActivity</string>
+    <string name="next">Next</string>
+    <string name="network_error">Please check your internet connection</string>
+    <string name="error_get_shops">Error while retrieving the shops of the group</string>
+    <string name="mod_shop">Change shop values</string>
+    <string name="delete">Delete Shop</string>
+    <string name="you">You</string>
+    <string name="error_get_users">Error while retrieving the members of the group</string>
+    <string name="notpaied">Check as not paid</string>
+    <string name="pay">Check as paied</string>
+    <string name="user_pic_description">Picture of the user</string>
+    <string name="img_description">Choose, if you want, an user image by clicking on the icon.</string>
+    <string name="nick_placeholder">Username</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="signup_nick_error">Insert an username of 4 characters or more.</string>
+    <string name="signup_name_error">Insert a name.</string>
+    <string name="signup_surname_error">Insert a surname.</string>
+    <string name="signup_mail_error">Insert a valid email.</string>
+    <string name="signup_cell_error">Insert a valid phone number.</string>
+    <string name="signup_pwd_error">Insert a password of 8 characters or more.</string>
+    <string name="signup_confirmpwd_error">The passwords are not matching.</string>
+    <string name="error_failed_signup">Username already taken. Choose another</string>
+    <string name="no_groups_available">No groups available.</string>
+    <string name="no_shops_available">No shops available.</string>
+    <string name="shop_paied">Paid</string>
+    <string name="new_shop">New shop</string>
+    <string name="desc_add_description">Shop description</string>
+    <string name="desc_add_shop">Add shop\'s value</string>
+    <string name="registration_confirmed_description">Welcome to Walli. To verify your account, we send you an email to the address FUCKINGMAIL . Once the account is verified, you can go back and login.</string>
+    <string name="user_image_desc">User image</string>
+    <string name="shop_description_error">Insert a description of the shop.</string>
+    <string name="shop_value_error">Insert a correct value for the shop.</string>
+    <string name="error_insert_shop">Error while saving the new shop. Retry</string>
+    <string name="shop_saved">Shop saved successfully</string>
+    <string name="tab_shops">Shops</string>
+    <string name="tab_users">Users</string>
+    <string name="tab_pay">Credits/Debts</string>
+    <string name="error_get_credit">Error while retrieving credits/debits</string>
+    <string name="no_notify_available">No shop requests.</string>
+    <string name="tab_notify">To Buy</string>
+    <string name="error_get_shops_notify">Error while retrieving shops to do</string>
+    <string name="new_notify">New shop to do</string>
+    <string name="shop_notify_saved">Shop to do saved successfully</string>
+    <string name="admin">Administrator</string>
+    <string name="leave_password">If you don\'t want to change your password, just leave the password\'s fields blank.</string>
+    <string name="error_update_user_profile">Error while updating user data</string>
+    <string name="user_update_succeded">User data updated successfully</string>
+    <string name="error_new_group_name">Insert a group\'s name.</string>
+    <string name="add_user_to_group">Add users</string>
+    <string name="add_user_label">Add users to the group</string>
+    <string name="insert_users">Add at least one user</string>
+    <string name="error_update_group">Error while updating users of the group</string>
+    <string name="choice_currency">Choose a currency</string>
+    <string name="new_group_created">New group successfully created</string>
+    <string name="group_users_updated">Group users successfully updated</string>
+    <string name="debit_description">Credits and debts</string>
+    <string name="username_already_taken">Username already taken. Choose another</string>
+    <string name="set_default_currency">Set your preferred currency</string>
+    <string name="send_notification">Notificate the debt</string>
+    <string name="confirm">Confirm operation</string>
+    <string name="delete_shop">Are you sure to delete this shop?</string>
+    <string name="error_delete_shop">Error while deleting shop</string>
+    <string name="error_delete_shop_payed">You can\'t delete this shop because someone has already paid</string>
+    <string name="delete_group">Delete the group</string>
+    <string name="ask_delete_group">Are you sure to delete the group?</string>
+    <string name="ask_exit_group">Sure to leave the group?</string>
+    <string name="error_delete_group">Error while deleting the group</string>
+    <string name="error_delete_group_notpayed">You can\'t exit this group because not everything is paid</string>
+    <string name="shop_removed">Shop deleted successfully</string>
+    <string name="group_removed">Group deleted successfully</string>
+    <string name="mod_group">Change group data</string>
+    <string name="group_updated">Group data updated</string>
+    <string name="not_changeable_shop">You can\'t change this shop because someone has already paid for it.</string>
+    <string name="shop_updated">Shop updated successfully</string>
+    <string name="error_update_shop">Error while updating the shop</string>
+    <string name="delete_notify">Are you sure to delete this shop notify?</string>
+    <string name="shop_notify_updated">Shop notify updated successfully</string>
+    <string name="error_update_notify">Error while updating the shop notify</string>
+    <string name="error_insert_notify">Error while saving the shop notify</string>
+    <string name="confirm_set_as_paid">Are you sure to check the debt as paid? This action is irreversible</string>
+    <string name="debt_paid">Debt set as paid successfully</string>
+    <string name="error_pay_debt">Error while setting debt as paid</string>
+    <string name="error_get_charts">Error while retrieving charts data</string>
+    <string name="in_out">In/Out</string>
+    <string name="finances_description">Finances movements</string>
+    <string name="debt">Debt</string>
+    <string name="credit">Credit</string>
+    <string name="piechart_name">Credit/Debt charts</string>
+    <string name="pie_chart_title">Finances Situation</string>
+    <string name="choice_from_date">From:</string>
+    <string name="choice_to_date">To:</string>
+    <string name="bar_chart_title">History of credit/debt</string>
+    <string name="push_new_group">You are added to this new group</string>
+    <string name="push_new_shop" formatted="false">New shop: %desc%</string>
+    <string name="push_new_notify" formatted="false">New shop to do: %desc%</string>
+    <string name="push_debit_paid">You\'re debt is sold!</string>
+    <string name="push_notification_sent">Reminder sent</string>
+    <string name="error_push_notfication">Error while sending reminder. You can send reminder only once in a day</string>
+    <string name="push_payment_request" formatted="false">Remember to pay your debt to %name% !</string>
+    <string name="delete_user">Delete user</string>
+    <string name="error_delete_shop_notify">Error while deleting the shop to do</string>
+    <string name="shop_notify_deleted">Shop to do deleted</string>
+    <string name="password_forgotten">Forgotten password?</string>
+    <string name="insert_email">Insert the email to restore the password</string>
+    <string name="password_changed">Password changed. We send you an email with the new password</string>
+    <string name="password_invalid_mail">The mail inserted is unknow to our system</string>
+    <string name="error_forgot_password">Error while restoring password</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/user_parent_layout"
+    android:background="?attr/selectableItemBackground">
+    <!--immagine utente-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/user_pic_description"
+        android:id="@+id/user_image"
+        android:src="@mipmap/default_user_image"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <!--anagrafica utente-->
+    <com.walli_app.walli.RobotoTextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/anagrafica_utente"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:text="Nome Cognome"/>
+
+    <!--nickname-->
+    <com.walli_app.walli.RobotoBoldTextView
+        android:id="@+id/nick_utente"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/anagrafica_utente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:text="nickname"/>
+
+    <!--credito/debito-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/credit_debit"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="0€"/>
+
+    <!--linea divisoria-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_image"/>
+</RelativeLayout>

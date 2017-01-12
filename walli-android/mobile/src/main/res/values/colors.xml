@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#454545</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="transparentColorPrimary">#AA212121</color>
+    <color name="whiteTextColor">#FFFFFF</color>
+    <color name="colorAccentFade">#BF360C</color>
+    <color name="colorAccentFadeFade">#FF7043</color>
+    <color name="updateBarBlue">#000099</color>
+    <color name="selectedBlue">#8864B5F6</color>
+    <color name="chartRed">#D50000</color>
+    <color name="chartGreen">#388E3C</color>
+</resources>

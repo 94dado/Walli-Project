@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <!--cashi-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/cashi"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="0€"/>
+
+    <!--pagato-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/paied"
+        android:layout_toStartOf="@id/user_name"
+        android:layout_toLeftOf="@id/user_name"
+        android:textColor="@color/transparentColorPrimary"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/cashi"
+        android:layout_toEndOf="@id/cashi"
+        android:text="@string/shop_paied"/>
+
+    <!--descrizione spesa-->
+    <com.walli_app.walli.RobotoTextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/shop_description"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cashi"
+        android:text="Descrizione spesa"/>
+
+    <!--nome utente che fa spesa -->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/user_name"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Nome utente"/>
+
+    <!--last update-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/lastMod"
+        android:layout_below="@id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Yesterday"/>
+    <!--linea divisoria-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/shop_description"/>
+</RelativeLayout>

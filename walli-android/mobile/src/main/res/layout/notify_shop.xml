@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notify_parent_layout"
+    android:background="?attr/selectableItemBackground">
+
+    <!--anagrafica utente-->
+    <com.walli_app.walli.RobotoTextView
+        android:id="@+id/notify_description"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrizione acquisto da fare"/>
+
+    <!--nome utente-->
+    <com.walli_app.walli.RobotoItalicTextView
+        android:id="@+id/user_name"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/notify_description"
+        android:text="Username"/>
+
+    <!--linea divisoria-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_name"/>
+</RelativeLayout>

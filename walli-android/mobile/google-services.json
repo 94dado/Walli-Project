@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "869196313651",
+    "firebase_url": "https://walli-ae69c.firebaseio.com",
+    "project_id": "walli-ae69c",
+    "storage_bucket": "walli-ae69c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869196313651:android:54db2deb65be459b",
+        "android_client_info": {
+          "package_name": "com.walli_app.walli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869196313651-pm9gvc6k8i0bv9n5g9rscgdqj04jllhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl7CTzMZwdsTuSa_GkuRqjR_MgAzKqud8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DF6C213ADF7EF47D6199357 /* Pods_WalliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9BB4ED34BB970175099F1A /* Pods_WalliUITests.framework */; };
+		9E12A9F3E8D58D0B2D687DA2 /* Pods_Walli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E956EB449B40FFDD4A42BD /* Pods_Walli.framework */; };
+		DD15103E1D2E7091007C5201 /* PopoverChangeCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15103D1D2E7091007C5201 /* PopoverChangeCurrency.swift */; };
+		DD1510401D2E88F6007C5201 /* MembersRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15103F1D2E88F6007C5201 /* MembersRealmDB.swift */; };
+		DD1510421D2EBA06007C5201 /* ImageUsersRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1510411D2EBA06007C5201 /* ImageUsersRealmDB.swift */; };
+		DD1510441D2EBA14007C5201 /* ImageGroupsRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1510431D2EBA14007C5201 /* ImageGroupsRealmDB.swift */; };
+		DD1510461D2EBAD0007C5201 /* ImageFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1510451D2EBAD0007C5201 /* ImageFunction.swift */; };
+		DD15F6BC1CC773B800A13DC4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15F6BB1CC773B800A13DC4 /* MainController.swift */; };
+		DD15F6C31CC78E6A00A13DC4 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15F6C21CC78E6A00A13DC4 /* GraphController.swift */; };
+		DD15F6C51CC78EB300A13DC4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15F6C41CC78EB300A13DC4 /* MenuController.swift */; };
+		DD15F6C81CC7B35E00A13DC4 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15F6C71CC7B35E00A13DC4 /* CommonFunction.swift */; };
+		DD2BD0381D300374007ED074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2BD0371D300374007ED074 /* Main.storyboard */; };
+		DD3D3A4D1D2AD84400686A21 /* PayExpensesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D3A4C1D2AD84400686A21 /* PayExpensesController.swift */; };
+		DD3D3A4F1D2B17EE00686A21 /* PayExpensesFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D3A4E1D2B17EE00686A21 /* PayExpensesFunction.swift */; };
+		DD45B54C1D3293C2006F7102 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD45B54B1D3293C2006F7102 /* GoogleService-Info.plist */; };
+		DD4883121D25A15600F7E9D0 /* ProfileMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4883111D25A15600F7E9D0 /* ProfileMenuController.swift */; };
+		DD4EA3071CCBD32A007905FE /* GraphicFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EA3061CCBD32A007905FE /* GraphicFunction.swift */; };
+		DD5047B41D1CD4910018472F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047AD1D1CD4910018472F /* Alamofire.framework */; };
+		DD5047B51D1CD4910018472F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047AE1D1CD4910018472F /* Charts.framework */; };
+		DD5047B61D1CD4910018472F /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047AF1D1CD4910018472F /* CryptoSwift.framework */; };
+		DD5047BA1D1CD4910018472F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047B31D1CD4910018472F /* SwiftyJSON.framework */; };
+		DD5047BC1D1CD4F40018472F /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047AD1D1CD4910018472F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5047BD1D1CD4F40018472F /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047AE1D1CD4910018472F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5047BE1D1CD4F40018472F /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047AF1D1CD4910018472F /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5047C21D1CD4F40018472F /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047B31D1CD4910018472F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5047DB1D1CDA930018472F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047D91D1CDA930018472F /* Realm.framework */; };
+		DD5047DE1D1CDAD10018472F /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047D91D1CDA930018472F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5047DF1D1CDAD10018472F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5047DA1D1CDA930018472F /* RealmSwift.framework */; };
+		DD5047E01D1CDAD10018472F /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD5047DA1D1CDA930018472F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD5060961D243DE000B6F96F /* PopoverNotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5060951D243DE000B6F96F /* PopoverNotifyController.swift */; };
+		DD5060981D243ECE00B6F96F /* NotifyFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5060971D243ECE00B6F96F /* NotifyFunction.swift */; };
+		DD50609A1D247D5900B6F96F /* UsersRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5060991D247D5900B6F96F /* UsersRealmDB.swift */; };
+		DD6C1E871D2CD7FF00D2DEA3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C1E861D2CD7FF00D2DEA3 /* WebViewController.swift */; };
+		DD6C1E8E1D2D482700D2DEA3 /* PopoverImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C1E8D1D2D482700D2DEA3 /* PopoverImageController.swift */; };
+		DD6E4BCB1D210FC300881B2D /* UserGroupFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E4BCA1D210FC300881B2D /* UserGroupFunction.swift */; };
+		DD7238661D2189DA00A6CA6C /* SignupFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7238651D2189DA00A6CA6C /* SignupFunction.swift */; };
+		DD827A491CC5581C00151768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD827A481CC5581C00151768 /* LaunchScreen.storyboard */; };
+		DDA50D7C1D23E07E005ED2BB /* NotifyRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA50D7B1D23E07E005ED2BB /* NotifyRealmDB.swift */; };
+		DDA900AF1D16E3F700C10339 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA900AE1D16E3F700C10339 /* LoginController.swift */; };
+		DDA900B11D16F78400C10339 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA900B01D16F78400C10339 /* SignupController.swift */; };
+		DDB045201D198D420088A159 /* GroupsFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0451F1D198D420088A159 /* GroupsFunction.swift */; };
+		DDBC38431CDB4F0D0035F212 /* MenuFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC38421CDB4F0D0035F212 /* MenuFunction.swift */; };
+		DDBCE0A71CDCD320009021BE /* GroupsChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCE0A61CDCD320009021BE /* GroupsChatController.swift */; };
+		DDBF7E371D22BC2C0040C7A2 /* PopoverExpansesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF7E361D22BC2C0040C7A2 /* PopoverExpansesController.swift */; };
+		DDBF7E391D22C61B0040C7A2 /* ExpesesFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF7E381D22C61B0040C7A2 /* ExpesesFunction.swift */; };
+		DDBF7E3D1D22FC510040C7A2 /* ExpenseReamlDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF7E3C1D22FC510040C7A2 /* ExpenseReamlDB.swift */; };
+		DDC415CA1D1807AB00341C81 /* LoginFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415C91D1807AB00341C81 /* LoginFunction.swift */; };
+		DDC415F91D18AC2100341C81 /* ServerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415F81D18AC2100341C81 /* ServerFunction.swift */; };
+		DDE6C6AA1D1FD4A100AA533E /* ChatGroupFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE6C6A91D1FD4A100AA533E /* ChatGroupFunction.swift */; };
+		DDE6C6AC1D20344D00AA533E /* UserGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE6C6AB1D20344D00AA533E /* UserGroupController.swift */; };
+		DDEFF1A81CC3CB4500A2653B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEFF1A71CC3CB4500A2653B /* Images.xcassets */; };
+		DDF604231CC27312003E635E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF604221CC27312003E635E /* AppDelegate.swift */; };
+		DDF604251CC27312003E635E /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF604241CC27312003E635E /* GroupsController.swift */; };
+		DDF6042A1CC27312003E635E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF604291CC27312003E635E /* Assets.xcassets */; };
+		DDF604381CC27312003E635E /* WalliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF604371CC27312003E635E /* WalliTests.swift */; };
+		DDF604431CC27312003E635E /* WalliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF604421CC27312003E635E /* WalliUITests.swift */; };
+		DDFB68431D1B3BF90002692B /* LoginRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB68421D1B3BF90002692B /* LoginRealmDB.swift */; };
+		DDFB68451D1B46B90002692B /* GroupRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB68441D1B46B90002692B /* GroupRealmDB.swift */; };
+		DDFEF2B51D25EF9900DEB467 /* UpdateProfileFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEF2B41D25EF9900DEB467 /* UpdateProfileFunction.swift */; };
+		DDFEF2B91D26CACA00DEB467 /* AddUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEF2B81D26CACA00DEB467 /* AddUserController.swift */; };
+		DDFEF2BB1D275BFF00DEB467 /* AddUserFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEF2BA1D275BFF00DEB467 /* AddUserFunction.swift */; };
+		FE0BDC1A6E172E775E2069D9 /* Pods_WalliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9395C42CA88164BC2250FBBF /* Pods_WalliTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDF604341CC27312003E635E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF604171CC27312003E635E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF6041E1CC27312003E635E;
+			remoteInfo = Walli;
+		};
+		DDF6043F1CC27312003E635E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF604171CC27312003E635E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF6041E1CC27312003E635E;
+			remoteInfo = Walli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD5047BB1D1CD4E10018472F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD5047DE1D1CDAD10018472F /* Realm.framework in CopyFiles */,
+				DD5047BC1D1CD4F40018472F /* Alamofire.framework in CopyFiles */,
+				DD5047E01D1CDAD10018472F /* RealmSwift.framework in CopyFiles */,
+				DD5047BD1D1CD4F40018472F /* Charts.framework in CopyFiles */,
+				DD5047BE1D1CD4F40018472F /* CryptoSwift.framework in CopyFiles */,
+				DD5047C21D1CD4F40018472F /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB8BA51CCA699600FF21D5 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15E956EB449B40FFDD4A42BD /* Pods_Walli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EDB62ED67BA35BE466419CC /* Pods-WalliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalliTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalliTests/Pods-WalliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5002C3C77D7B47E02709C551 /* Pods-Walli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walli.release.xcconfig"; path = "Pods/Target Support Files/Pods-Walli/Pods-Walli.release.xcconfig"; sourceTree = "<group>"; };
+		5B9BB4ED34BB970175099F1A /* Pods_WalliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BB9B041BF86F50CD6756DE /* Pods-WalliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalliUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalliUITests/Pods-WalliUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9395C42CA88164BC2250FBBF /* Pods_WalliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFE38275DC6849F1A085DC9 /* Pods-WalliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalliTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalliTests/Pods-WalliTests.release.xcconfig"; sourceTree = "<group>"; };
+		B03C63354DE90792D30FBAE4 /* Pods-WalliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalliUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalliUITests/Pods-WalliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B418FFFB170BA02290D86362 /* Pods-Walli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Walli/Pods-Walli.debug.xcconfig"; sourceTree = "<group>"; };
+		DD15103D1D2E7091007C5201 /* PopoverChangeCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverChangeCurrency.swift; sourceTree = "<group>"; };
+		DD15103F1D2E88F6007C5201 /* MembersRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersRealmDB.swift; sourceTree = "<group>"; };
+		DD1510411D2EBA06007C5201 /* ImageUsersRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUsersRealmDB.swift; sourceTree = "<group>"; };
+		DD1510431D2EBA14007C5201 /* ImageGroupsRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGroupsRealmDB.swift; sourceTree = "<group>"; };
+		DD1510451D2EBAD0007C5201 /* ImageFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFunction.swift; sourceTree = "<group>"; };
+		DD15F6BB1CC773B800A13DC4 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		DD15F6C21CC78E6A00A13DC4 /* GraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
+		DD15F6C41CC78EB300A13DC4 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		DD15F6C71CC7B35E00A13DC4 /* CommonFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		DD2BD0371D300374007ED074 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DD3D3A4C1D2AD84400686A21 /* PayExpensesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayExpensesController.swift; sourceTree = "<group>"; };
+		DD3D3A4E1D2B17EE00686A21 /* PayExpensesFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayExpensesFunction.swift; sourceTree = "<group>"; };
+		DD45B54B1D3293C2006F7102 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD4883111D25A15600F7E9D0 /* ProfileMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMenuController.swift; sourceTree = "<group>"; };
+		DD4EA3061CCBD32A007905FE /* GraphicFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicFunction.swift; sourceTree = "<group>"; };
+		DD5047AA1D1CD4020018472F /* Walli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5047AD1D1CD4910018472F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DD5047AE1D1CD4910018472F /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		DD5047AF1D1CD4910018472F /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		DD5047B31D1CD4910018472F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		DD5047D91D1CDA930018472F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		DD5047DA1D1CDA930018472F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		DD5060951D243DE000B6F96F /* PopoverNotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverNotifyController.swift; sourceTree = "<group>"; };
+		DD5060971D243ECE00B6F96F /* NotifyFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyFunction.swift; sourceTree = "<group>"; };
+		DD5060991D247D5900B6F96F /* UsersRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRealmDB.swift; sourceTree = "<group>"; };
+		DD6C1E861D2CD7FF00D2DEA3 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DD6C1E8D1D2D482700D2DEA3 /* PopoverImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverImageController.swift; sourceTree = "<group>"; };
+		DD6C5FF81D1DF42F00499C11 /* WalliBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WalliBridgingHeader.h; path = Walli/WalliBridgingHeader.h; sourceTree = "<group>"; };
+		DD6E4BCA1D210FC300881B2D /* UserGroupFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGroupFunction.swift; sourceTree = "<group>"; };
+		DD7238651D2189DA00A6CA6C /* SignupFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupFunction.swift; sourceTree = "<group>"; };
+		DD827A481CC5581C00151768 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDA50D7B1D23E07E005ED2BB /* NotifyRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyRealmDB.swift; sourceTree = "<group>"; };
+		DDA900AE1D16E3F700C10339 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		DDA900B01D16F78400C10339 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		DDB0451F1D198D420088A159 /* GroupsFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsFunction.swift; sourceTree = "<group>"; };
+		DDBC38421CDB4F0D0035F212 /* MenuFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuFunction.swift; sourceTree = "<group>"; };
+		DDBCE0A61CDCD320009021BE /* GroupsChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsChatController.swift; sourceTree = "<group>"; };
+		DDBF7E361D22BC2C0040C7A2 /* PopoverExpansesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverExpansesController.swift; sourceTree = "<group>"; };
+		DDBF7E381D22C61B0040C7A2 /* ExpesesFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpesesFunction.swift; sourceTree = "<group>"; };
+		DDBF7E3C1D22FC510040C7A2 /* ExpenseReamlDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseReamlDB.swift; sourceTree = "<group>"; };
+		DDC415C91D1807AB00341C81 /* LoginFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFunction.swift; sourceTree = "<group>"; };
+		DDC415F81D18AC2100341C81 /* ServerFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerFunction.swift; sourceTree = "<group>"; };
+		DDD9872D1D32A6910021B61A /* WalliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD9872E1D32A6910021B61A /* WalliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE6C6A91D1FD4A100AA533E /* ChatGroupFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGroupFunction.swift; sourceTree = "<group>"; };
+		DDE6C6AB1D20344D00AA533E /* UserGroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGroupController.swift; sourceTree = "<group>"; };
+		DDEFF1A71CC3CB4500A2653B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Walli/Images.xcassets; sourceTree = "<group>"; };
+		DDF604221CC27312003E635E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDF604241CC27312003E635E /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		DDF604291CC27312003E635E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Walli/Assets.xcassets; sourceTree = "<group>"; };
+		DDF6042E1CC27312003E635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF604371CC27312003E635E /* WalliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalliTests.swift; sourceTree = "<group>"; };
+		DDF604391CC27312003E635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF604421CC27312003E635E /* WalliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalliUITests.swift; sourceTree = "<group>"; };
+		DDF604441CC27312003E635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFB68421D1B3BF90002692B /* LoginRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRealmDB.swift; sourceTree = "<group>"; };
+		DDFB68441D1B46B90002692B /* GroupRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRealmDB.swift; sourceTree = "<group>"; };
+		DDFEF2B41D25EF9900DEB467 /* UpdateProfileFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileFunction.swift; sourceTree = "<group>"; };
+		DDFEF2B81D26CACA00DEB467 /* AddUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserController.swift; sourceTree = "<group>"; };
+		DDFEF2BA1D275BFF00DEB467 /* AddUserFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserFunction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDF6041C1CC27312003E635E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5047DB1D1CDA930018472F /* Realm.framework in Frameworks */,
+				DD5047B41D1CD4910018472F /* Alamofire.framework in Frameworks */,
+				DD5047DF1D1CDAD10018472F /* RealmSwift.framework in Frameworks */,
+				DD5047B51D1CD4910018472F /* Charts.framework in Frameworks */,
+				DD5047B61D1CD4910018472F /* CryptoSwift.framework in Frameworks */,
+				DD5047BA1D1CD4910018472F /* SwiftyJSON.framework in Frameworks */,
+				9E12A9F3E8D58D0B2D687DA2 /* Pods_Walli.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF604301CC27312003E635E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0BDC1A6E172E775E2069D9 /* Pods_WalliTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF6043B1CC27312003E635E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF6C213ADF7EF47D6199357 /* Pods_WalliUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52F616BB9B46E3A60A957FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15E956EB449B40FFDD4A42BD /* Pods_Walli.framework */,
+				9395C42CA88164BC2250FBBF /* Pods_WalliTests.framework */,
+				5B9BB4ED34BB970175099F1A /* Pods_WalliUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD15F6BE1CC789CD00A13DC4 /* GroupsFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DDF604241CC27312003E635E /* GroupsController.swift */,
+				DDBCE0A61CDCD320009021BE /* GroupsChatController.swift */,
+				DDE6C6AB1D20344D00AA533E /* UserGroupController.swift */,
+				DDBF7E361D22BC2C0040C7A2 /* PopoverExpansesController.swift */,
+				DD5060951D243DE000B6F96F /* PopoverNotifyController.swift */,
+				DDFEF2B81D26CACA00DEB467 /* AddUserController.swift */,
+			);
+			name = GroupsFolder;
+			sourceTree = "<group>";
+		};
+		DD15F6BF1CC78A0500A13DC4 /* GraphicFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD15F6C21CC78E6A00A13DC4 /* GraphController.swift */,
+			);
+			name = GraphicFolder;
+			sourceTree = "<group>";
+		};
+		DD15F6C01CC78A1D00A13DC4 /* MainFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD15F6BB1CC773B800A13DC4 /* MainController.swift */,
+			);
+			name = MainFolder;
+			sourceTree = "<group>";
+		};
+		DD15F6C11CC78A5700A13DC4 /* MenuFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD15F6C41CC78EB300A13DC4 /* MenuController.swift */,
+				DD4883111D25A15600F7E9D0 /* ProfileMenuController.swift */,
+				DD6C1E861D2CD7FF00D2DEA3 /* WebViewController.swift */,
+				DD15103D1D2E7091007C5201 /* PopoverChangeCurrency.swift */,
+			);
+			name = MenuFolder;
+			sourceTree = "<group>";
+		};
+		DD15F6C61CC7B29F00A13DC4 /* CommonFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD15F6C71CC7B35E00A13DC4 /* CommonFunction.swift */,
+				DD4EA3061CCBD32A007905FE /* GraphicFunction.swift */,
+				DDBC38421CDB4F0D0035F212 /* MenuFunction.swift */,
+				DDC415F81D18AC2100341C81 /* ServerFunction.swift */,
+				DDC415C91D1807AB00341C81 /* LoginFunction.swift */,
+				DDB0451F1D198D420088A159 /* GroupsFunction.swift */,
+				DDE6C6A91D1FD4A100AA533E /* ChatGroupFunction.swift */,
+				DD6E4BCA1D210FC300881B2D /* UserGroupFunction.swift */,
+				DD7238651D2189DA00A6CA6C /* SignupFunction.swift */,
+				DDBF7E381D22C61B0040C7A2 /* ExpesesFunction.swift */,
+				DD5060971D243ECE00B6F96F /* NotifyFunction.swift */,
+				DDFEF2B41D25EF9900DEB467 /* UpdateProfileFunction.swift */,
+				DDFEF2BA1D275BFF00DEB467 /* AddUserFunction.swift */,
+				DD3D3A4E1D2B17EE00686A21 /* PayExpensesFunction.swift */,
+				DD1510451D2EBAD0007C5201 /* ImageFunction.swift */,
+			);
+			name = CommonFolder;
+			sourceTree = "<group>";
+		};
+		DD3D3A4B1D2AD82100686A21 /* PayExpensesFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D3A4C1D2AD84400686A21 /* PayExpensesController.swift */,
+			);
+			name = PayExpensesFolder;
+			sourceTree = "<group>";
+		};
+		DD5047CE1D1CD9030018472F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C5FF81D1DF42F00499C11 /* WalliBridgingHeader.h */,
+				DD5047AD1D1CD4910018472F /* Alamofire.framework */,
+				DD5047AE1D1CD4910018472F /* Charts.framework */,
+				DD5047AF1D1CD4910018472F /* CryptoSwift.framework */,
+				DD5047B31D1CD4910018472F /* SwiftyJSON.framework */,
+				DD5047D91D1CDA930018472F /* Realm.framework */,
+				DD5047DA1D1CDA930018472F /* RealmSwift.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DD6C1E8C1D2D480300D2DEA3 /* PhotoFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C1E8D1D2D482700D2DEA3 /* PopoverImageController.swift */,
+			);
+			name = PhotoFolder;
+			sourceTree = "<group>";
+		};
+		DDA900AA1D16E3D500C10339 /* LoginFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DDA900AE1D16E3F700C10339 /* LoginController.swift */,
+				DDA900B01D16F78400C10339 /* SignupController.swift */,
+			);
+			name = LoginFolder;
+			sourceTree = "<group>";
+		};
+		DDC415BD1D17F5FF00341C81 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB68421D1B3BF90002692B /* LoginRealmDB.swift */,
+				DDFB68441D1B46B90002692B /* GroupRealmDB.swift */,
+				DDBF7E3C1D22FC510040C7A2 /* ExpenseReamlDB.swift */,
+				DDA50D7B1D23E07E005ED2BB /* NotifyRealmDB.swift */,
+				DD5060991D247D5900B6F96F /* UsersRealmDB.swift */,
+				DD15103F1D2E88F6007C5201 /* MembersRealmDB.swift */,
+				DD1510411D2EBA06007C5201 /* ImageUsersRealmDB.swift */,
+				DD1510431D2EBA14007C5201 /* ImageGroupsRealmDB.swift */,
+			);
+			name = RealmDB;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DDF604161CC27312003E635E = {
+			isa = PBXGroup;
+			children = (
+				DDF604211CC27312003E635E /* Walli */,
+				DDEFF1A71CC3CB4500A2653B /* Images.xcassets */,
+				DDF604291CC27312003E635E /* Assets.xcassets */,
+				DDF604361CC27312003E635E /* WalliTests */,
+				DD5047CE1D1CD9030018472F /* Framework */,
+				DDF604411CC27312003E635E /* WalliUITests */,
+				DD5047AA1D1CD4020018472F /* Walli.app */,
+				ECA6CB363E895577C0116469 /* Pods */,
+				52F616BB9B46E3A60A957FA2 /* Frameworks */,
+				DDD9872D1D32A6910021B61A /* WalliTests.xctest */,
+				DDD9872E1D32A6910021B61A /* WalliUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		DDF604211CC27312003E635E /* Walli */ = {
+			isa = PBXGroup;
+			children = (
+				DDF604221CC27312003E635E /* AppDelegate.swift */,
+				DD827A481CC5581C00151768 /* LaunchScreen.storyboard */,
+				DD2BD0371D300374007ED074 /* Main.storyboard */,
+				DDF6042E1CC27312003E635E /* Info.plist */,
+				DD45B54B1D3293C2006F7102 /* GoogleService-Info.plist */,
+				DDA900AA1D16E3D500C10339 /* LoginFolder */,
+				DD3D3A4B1D2AD82100686A21 /* PayExpensesFolder */,
+				DD15F6C61CC7B29F00A13DC4 /* CommonFolder */,
+				DD15F6C11CC78A5700A13DC4 /* MenuFolder */,
+				DD15F6C01CC78A1D00A13DC4 /* MainFolder */,
+				DD6C1E8C1D2D480300D2DEA3 /* PhotoFolder */,
+				DD15F6BE1CC789CD00A13DC4 /* GroupsFolder */,
+				DD15F6BF1CC78A0500A13DC4 /* GraphicFolder */,
+				DDC415BD1D17F5FF00341C81 /* RealmDB */,
+			);
+			path = Walli;
+			sourceTree = "<group>";
+		};
+		DDF604361CC27312003E635E /* WalliTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF604371CC27312003E635E /* WalliTests.swift */,
+				DDF604391CC27312003E635E /* Info.plist */,
+			);
+			path = WalliTests;
+			sourceTree = "<group>";
+		};
+		DDF604411CC27312003E635E /* WalliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF604421CC27312003E635E /* WalliUITests.swift */,
+				DDF604441CC27312003E635E /* Info.plist */,
+			);
+			path = WalliUITests;
+			sourceTree = "<group>";
+		};
+		ECA6CB363E895577C0116469 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B418FFFB170BA02290D86362 /* Pods-Walli.debug.xcconfig */,
+				5002C3C77D7B47E02709C551 /* Pods-Walli.release.xcconfig */,
+				1EDB62ED67BA35BE466419CC /* Pods-WalliTests.debug.xcconfig */,
+				AEFE38275DC6849F1A085DC9 /* Pods-WalliTests.release.xcconfig */,
+				B03C63354DE90792D30FBAE4 /* Pods-WalliUITests.debug.xcconfig */,
+				68BB9B041BF86F50CD6756DE /* Pods-WalliUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DD5047C51D1CD7D00018472F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DDF6041E1CC27312003E635E /* Walli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF604471CC27312003E635E /* Build configuration list for PBXNativeTarget "Walli" */;
+			buildPhases = (
+				D57B45EAAEDC366013F84BD0 /* [CP] Check Pods Manifest.lock */,
+				DDF6041B1CC27312003E635E /* Sources */,
+				DDF6041C1CC27312003E635E /* Frameworks */,
+				DD5047C51D1CD7D00018472F /* Headers */,
+				DDF6041D1CC27312003E635E /* Resources */,
+				DDBB8BA51CCA699600FF21D5 /* Embed PlugIns */,
+				DD5047BB1D1CD4E10018472F /* CopyFiles */,
+				DD5047E11D1CDB210018472F /* ShellScript */,
+				CF9D2D573D88A70B6B7CCCD7 /* [CP] Embed Pods Frameworks */,
+				F3A059FA696DBFA34066BE6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walli;
+			productName = Walli;
+			productReference = DD5047AA1D1CD4020018472F /* Walli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDF604321CC27312003E635E /* WalliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF6044A1CC27312003E635E /* Build configuration list for PBXNativeTarget "WalliTests" */;
+			buildPhases = (
+				45906B0109BAC47FC371F855 /* [CP] Check Pods Manifest.lock */,
+				DDF6042F1CC27312003E635E /* Sources */,
+				DDF604301CC27312003E635E /* Frameworks */,
+				DDF604311CC27312003E635E /* Resources */,
+				6CECD2FAF7A8106C35DE1F9E /* [CP] Embed Pods Frameworks */,
+				D0A0397DBDFD366BE1104FFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF604351CC27312003E635E /* PBXTargetDependency */,
+			);
+			name = WalliTests;
+			productName = WalliTests;
+			productReference = DDD9872D1D32A6910021B61A /* WalliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDF6043D1CC27312003E635E /* WalliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF6044D1CC27312003E635E /* Build configuration list for PBXNativeTarget "WalliUITests" */;
+			buildPhases = (
+				1B7751347B78500CCC8DC815 /* [CP] Check Pods Manifest.lock */,
+				DDF6043A1CC27312003E635E /* Sources */,
+				DDF6043B1CC27312003E635E /* Frameworks */,
+				DDF6043C1CC27312003E635E /* Resources */,
+				85634CA99913B54E8CC7F24F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF604401CC27312003E635E /* PBXTargetDependency */,
+			);
+			name = WalliUITests;
+			productName = WalliUITests;
+			productReference = DDD9872E1D32A6910021B61A /* WalliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDF604171CC27312003E635E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = WalliApp;
+				TargetAttributes = {
+					DDF6041E1CC27312003E635E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LLXZQKT32U;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					DDF604321CC27312003E635E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = D4Z68CHDQ3;
+						TestTargetID = DDF6041E1CC27312003E635E;
+					};
+					DDF6043D1CC27312003E635E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = D4Z68CHDQ3;
+						TestTargetID = DDF6041E1CC27312003E635E;
+					};
+				};
+			};
+			buildConfigurationList = DDF6041A1CC27312003E635E /* Build configuration list for PBXProject "Walli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDF604161CC27312003E635E;
+			productRefGroup = DDF604161CC27312003E635E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDF6041E1CC27312003E635E /* Walli */,
+				DDF604321CC27312003E635E /* WalliTests */,
+				DDF6043D1CC27312003E635E /* WalliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDF6041D1CC27312003E635E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDEFF1A81CC3CB4500A2653B /* Images.xcassets in Resources */,
+				DDF6042A1CC27312003E635E /* Assets.xcassets in Resources */,
+				DD45B54C1D3293C2006F7102 /* GoogleService-Info.plist in Resources */,
+				DD827A491CC5581C00151768 /* LaunchScreen.storyboard in Resources */,
+				DD2BD0381D300374007ED074 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF604311CC27312003E635E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF6043C1CC27312003E635E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B7751347B78500CCC8DC815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45906B0109BAC47FC371F855 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CECD2FAF7A8106C35DE1F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalliTests/Pods-WalliTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85634CA99913B54E8CC7F24F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalliUITests/Pods-WalliUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9D2D573D88A70B6B7CCCD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walli/Pods-Walli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A0397DBDFD366BE1104FFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalliTests/Pods-WalliTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57B45EAAEDC366013F84BD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5047E11D1CDB210018472F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+		F3A059FA696DBFA34066BE6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walli/Pods-Walli-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDF6041B1CC27312003E635E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE6C6AC1D20344D00AA533E /* UserGroupController.swift in Sources */,
+				DDFEF2B51D25EF9900DEB467 /* UpdateProfileFunction.swift in Sources */,
+				DDBC38431CDB4F0D0035F212 /* MenuFunction.swift in Sources */,
+				DDE6C6AA1D1FD4A100AA533E /* ChatGroupFunction.swift in Sources */,
+				DDBCE0A71CDCD320009021BE /* GroupsChatController.swift in Sources */,
+				DD15F6C31CC78E6A00A13DC4 /* GraphController.swift in Sources */,
+				DDFB68451D1B46B90002692B /* GroupRealmDB.swift in Sources */,
+				DD15F6C81CC7B35E00A13DC4 /* CommonFunction.swift in Sources */,
+				DDFEF2B91D26CACA00DEB467 /* AddUserController.swift in Sources */,
+				DD7238661D2189DA00A6CA6C /* SignupFunction.swift in Sources */,
+				DD6C1E8E1D2D482700D2DEA3 /* PopoverImageController.swift in Sources */,
+				DD3D3A4F1D2B17EE00686A21 /* PayExpensesFunction.swift in Sources */,
+				DD5060961D243DE000B6F96F /* PopoverNotifyController.swift in Sources */,
+				DDA900B11D16F78400C10339 /* SignupController.swift in Sources */,
+				DD15F6BC1CC773B800A13DC4 /* MainController.swift in Sources */,
+				DDF604251CC27312003E635E /* GroupsController.swift in Sources */,
+				DD4883121D25A15600F7E9D0 /* ProfileMenuController.swift in Sources */,
+				DD3D3A4D1D2AD84400686A21 /* PayExpensesController.swift in Sources */,
+				DD15103E1D2E7091007C5201 /* PopoverChangeCurrency.swift in Sources */,
+				DDBF7E3D1D22FC510040C7A2 /* ExpenseReamlDB.swift in Sources */,
+				DDFEF2BB1D275BFF00DEB467 /* AddUserFunction.swift in Sources */,
+				DD1510401D2E88F6007C5201 /* MembersRealmDB.swift in Sources */,
+				DDBF7E371D22BC2C0040C7A2 /* PopoverExpansesController.swift in Sources */,
+				DDF604231CC27312003E635E /* AppDelegate.swift in Sources */,
+				DDA50D7C1D23E07E005ED2BB /* NotifyRealmDB.swift in Sources */,
+				DD15F6C51CC78EB300A13DC4 /* MenuController.swift in Sources */,
+				DD4EA3071CCBD32A007905FE /* GraphicFunction.swift in Sources */,
+				DDBF7E391D22C61B0040C7A2 /* ExpesesFunction.swift in Sources */,
+				DDC415F91D18AC2100341C81 /* ServerFunction.swift in Sources */,
+				DDC415CA1D1807AB00341C81 /* LoginFunction.swift in Sources */,
+				DDFB68431D1B3BF90002692B /* LoginRealmDB.swift in Sources */,
+				DDA900AF1D16E3F700C10339 /* LoginController.swift in Sources */,
+				DD1510441D2EBA14007C5201 /* ImageGroupsRealmDB.swift in Sources */,
+				DD1510421D2EBA06007C5201 /* ImageUsersRealmDB.swift in Sources */,
+				DD6C1E871D2CD7FF00D2DEA3 /* WebViewController.swift in Sources */,
+				DD5060981D243ECE00B6F96F /* NotifyFunction.swift in Sources */,
+				DD50609A1D247D5900B6F96F /* UsersRealmDB.swift in Sources */,
+				DD6E4BCB1D210FC300881B2D /* UserGroupFunction.swift in Sources */,
+				DDB045201D198D420088A159 /* GroupsFunction.swift in Sources */,
+				DD1510461D2EBAD0007C5201 /* ImageFunction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF6042F1CC27312003E635E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF604381CC27312003E635E /* WalliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF6043A1CC27312003E635E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF604431CC27312003E635E /* WalliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDF604351CC27312003E635E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF6041E1CC27312003E635E /* Walli */;
+			targetProxy = DDF604341CC27312003E635E /* PBXContainerItemProxy */;
+		};
+		DDF604401CC27312003E635E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF6041E1CC27312003E635E /* Walli */;
+			targetProxy = DDF6043F1CC27312003E635E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDF604451CC27312003E635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF604461CC27312003E635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDF604481CC27312003E635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B418FFFB170BA02290D86362 /* Pods-Walli.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Walli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.Walli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Walli/WalliBridgingHeader.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF604491CC27312003E635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5002C3C77D7B47E02709C551 /* Pods-Walli.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Walli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.Walli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Walli/WalliBridgingHeader.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDF6044B1CC27312003E635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDB62ED67BA35BE466419CC /* Pods-WalliTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WalliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.WalliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walli.app/Walli";
+			};
+			name = Debug;
+		};
+		DDF6044C1CC27312003E635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEFE38275DC6849F1A085DC9 /* Pods-WalliTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WalliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.WalliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walli.app/Walli";
+			};
+			name = Release;
+		};
+		DDF6044E1CC27312003E635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B03C63354DE90792D30FBAE4 /* Pods-WalliUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WalliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.WalliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Walli;
+			};
+			name = Debug;
+		};
+		DDF6044F1CC27312003E635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BB9B041BF86F50CD6756DE /* Pods-WalliUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WalliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walli-app.WalliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Walli;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDF6041A1CC27312003E635E /* Build configuration list for PBXProject "Walli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF604451CC27312003E635E /* Debug */,
+				DDF604461CC27312003E635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF604471CC27312003E635E /* Build configuration list for PBXNativeTarget "Walli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF604481CC27312003E635E /* Debug */,
+				DDF604491CC27312003E635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF6044A1CC27312003E635E /* Build configuration list for PBXNativeTarget "WalliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF6044B1CC27312003E635E /* Debug */,
+				DDF6044C1CC27312003E635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF6044D1CC27312003E635E /* Build configuration list for PBXNativeTarget "WalliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF6044E1CC27312003E635E /* Debug */,
+				DDF6044F1CC27312003E635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDF604171CC27312003E635E /* Project object */;
+}
